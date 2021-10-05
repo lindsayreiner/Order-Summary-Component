@@ -1,0 +1,134 @@
+/* Layout
+The designs were created to the following widths:
+•	Mobile: 375px
+•	Desktop: 1440px
+Typography
+Font
+•	Weights: 500, 700, 900 */
+
+root {
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-bright-blue: hsl(245, 75%, 52%);
+  --neutral-pale-blue: hsl(225, 100%, 98%);
+  --neutral-desat-blue: hsl(224, 23%, 55%);
+  --neutral-dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  height: 100%;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("images\pattern-background-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img {
+  margin-bottom: 0;
+}
+
+.card-container {
+  width: 27%;
+  max-width: 45ch;
+  height: auto;
+  border-radius: 8px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-shadow: 10px 5px 19px hsl(224, 23%, 55%);
+}
+
+.card-img {
+  width: 100%;
+  margin-bottom: 0;
+  border-top-left-radius: 1em 1em;
+  border-top-right-radius: 1em 1em;
+}
+
+.card-body {
+  height: 60%;
+  text-align: center;
+  margin-top: 0;
+  line-height: 1.6;
+  border-bottom-left-radius: 1em 1em;
+  border-bottom-right-radius: 1em 1em;
+}
+
+.card-title {
+  font-weight: 900;
+  font-size: 1.3rem;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.plan-container {
+  display: flex;
+  background-color: hsl(225, 100%, 98%);
+  margin: auto;
+  width: 85%;
+  margin-bottom: 25px;
+  padding: 5px;
+}
+
+.card-text {
+  font-size: 1rem;
+  padding: 10px;
+  margin: 0;
+}
+
+.annual-plan {
+  font-weight: 700;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  width: 85%;
+  margin: auto;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-decoration: none;
+}
+
+.proceed-btn {
+  background: hsl(245, 75%, 52%);
+  box-shadow: 10px 5px 19px hsl(224, 23%, 55%);
+  color: white;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.cancel-btn {
+  color: hsl(227, 4%, 52%);
+}
+
+.proceed-btn:hover {
+}
+
+.attribution {
+  display: flex;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+}
