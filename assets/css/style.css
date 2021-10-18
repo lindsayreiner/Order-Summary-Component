@@ -5,6 +5,13 @@ The designs were created to the following widths:
 Typography
 Font
 •	Weights: 500, 700, 900 */
+/* em or rem on padding and margin */
+/* min-height only.. will cause overflow if contents exceed set height  */
+/* % width */
+/* max-width ch for # of characters 75 max but 45-50 is best */
+/* rem for font size relative to font size of root element which is 16px */
+/* set font size on html element to 62.5% which equals 10px so when you use rem its easier to know what to put */
+/* em for media queries */
 
 root {
   --primary-pale-blue: hsl(225, 100%, 94%);
@@ -16,23 +23,19 @@ root {
 
 html {
   height: 100%;
-  background-image: url("images/pattern-background-desktop.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100%;
   font-family: "Red Hat Display", sans-serif;
-  background-image: url("images\pattern-background-desktop.svg");
+  background-image: url("../../images/pattern-background-desktop.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
 }
 
 img {
@@ -41,18 +44,16 @@ img {
 
 .card-container {
   width: 27%;
-  max-width: 45ch;
   height: auto;
   border-radius: 8px;
-  margin: 0;
-  padding: 0;
-  border: 0;
   box-shadow: 10px 5px 19px hsl(224, 23%, 55%);
+  background-color: transparent;
 }
 
 .card-img {
+  position: relative;
+  bottom: -0.2em;
   width: 100%;
-  margin-bottom: 0;
   border-top-left-radius: 1em 1em;
   border-top-right-radius: 1em 1em;
 }
@@ -60,10 +61,10 @@ img {
 .card-body {
   height: 60%;
   text-align: center;
-  margin-top: 0;
   line-height: 1.6;
   border-bottom-left-radius: 1em 1em;
   border-bottom-right-radius: 1em 1em;
+  background-color: white;
 }
 
 .card-title {
@@ -79,7 +80,7 @@ img {
   margin: auto;
   width: 85%;
   margin-bottom: 25px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .card-text {
@@ -88,8 +89,27 @@ img {
   margin: 0;
 }
 
+.cost {
+  position: relative;
+  left: -4.5em;
+  top: 1em;
+}
+
+.change-btn {
+  top: 1em;
+  position: relative;
+  color: hsl(245, 75%, 52%);
+}
+
+.change-btn:hover {
+  color: hsl(224, 23%, 55%);
+}
+
 .annual-plan {
   font-weight: 700;
+  position: relative;
+  left: 1em;
+  bottom: 1em;
 }
 
 .button-container {
@@ -119,6 +139,7 @@ img {
 }
 
 .proceed-btn:hover {
+  background-color: hsl(224, 59%, 31%);
 }
 
 .attribution {
