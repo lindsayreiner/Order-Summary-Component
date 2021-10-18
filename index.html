@@ -22,23 +22,26 @@
     <title>Frontend Mentor | Order summary card</title>
   </head>
   <body>
-    <div class="card-container">
+    <main class="card-container">
       <img
         src="./images/illustration-hero.svg"
         class="card-img"
-        alt="woman listening to music">
+        alt="woman listening to music"
+        aria-hidden="true">
 
       <div class="card-body text-center">
-        <p class="card-title">Order Summary</p>
+        <h1 class="card-title">Order Summary</h1>
         <p class="card-text">
           You can now listen to millions of songs, audiobooks, and podcasts on
           any device anywhere you like!
         </p>
 
         <div class="plan-container">
-          <img src="./images/icon-music.svg" class="music-icon" alt="music symbol">
-          <h4 class="annual-plan">Annual Plan</h4>
+          <img src="./images/icon-music.svg" class="music-icon" alt="music symbol" aria-hidden="true">
+          <div class="middle-text">
+          <h2 class="annual-plan">Annual Plan</h2>
           <p class="cost">$59.99/year</p> 
+          </div>
           <a href="#" class="change-btn"><u>Change</u></a></h4>
         </div>
         <div class="button-container">
@@ -50,7 +53,7 @@
           >
         </div>
       </div>
-  </div>
+    </main>
   
 
     <footer class="attribution">
