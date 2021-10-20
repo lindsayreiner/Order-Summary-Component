@@ -55,11 +55,9 @@ img {
 }
 
 .card-img {
-  position: relative;
-  bottom: -0.2em;
+  display: block;
   width: 100%;
-  border-top-left-radius: 1em 1em;
-  border-top-right-radius: 1em 1em;
+  border-radius: 8px 8px 0 0;
 }
 
 .card-body {
