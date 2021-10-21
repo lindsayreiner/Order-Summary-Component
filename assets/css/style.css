@@ -1,18 +1,3 @@
-/* Layout
-The designs were created to the following widths:
-•	Mobile: 375px
-•	Desktop: 1440px
-Typography
-Font
-•	Weights: 500, 700, 900 */
-/* em or rem on padding and margin */
-/* min-height only.. will cause overflow if contents exceed set height  */
-/* % width */
-/* max-width ch for # of characters 75 max but 45-50 is best */
-/* rem for font size relative to font size of root element which is 16px */
-/* set font size on html element to 62.5% which equals 10px so when you use rem its easier to know what to put */
-/* em for media queries */
-
 root {
   --primary-pale-blue: hsl(225, 100%, 94%);
   --primary-bright-blue: hsl(245, 75%, 52%);
