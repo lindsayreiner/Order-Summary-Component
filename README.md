@@ -36,7 +36,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/order-summary-using-html-and-css-only-9oKNa6CYd](https://www.frontendmentor.io/solutions/order-summary-using-html-and-css-only-9oKNa6CYd)
 - Live Site URL: [https://lindsayreiner.github.io/order-summary-component/](https://lindsayreiner.github.io/order-summary-component/)
 
 ## My process
